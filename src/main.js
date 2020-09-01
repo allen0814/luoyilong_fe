@@ -126,7 +126,7 @@ Vue.prototype.$notify = Notification
 Vue.prototype.$message = Message
 
 var axios = require('axios')
-axios.defaults.baseURL = 'http://localhost:8443/api'
+axios.defaults.baseURL = 'http://localhost:8443/api' // 114.55.251.34
 // 使请求带上凭证信息
 axios.defaults.withCredentials = true
 
