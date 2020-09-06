@@ -24,16 +24,25 @@ export default new Router({
         {
           path: '/index',
           name: 'AppIndex',
+          meta: {
+            requireAuth: true
+          },
           component: () => import('../components/home/AppIndex')
         },
         {
           path: '/jotter',
           name: 'Jotter',
+          meta: {
+            requireAuth: true
+          },
           component: () => import('../components/jotter/Articles')
         },
         {
           path: '/jotter/article',
           name: 'Article',
+          meta: {
+            requireAuth: true
+          },
           component: () => import('../components/jotter/ArticleDetails')
         },
         {
@@ -47,6 +56,9 @@ export default new Router({
         {
           path: '/library',
           name: 'Library',
+          meta: {
+            requireAuth: true
+          },
           component: () => import('../components/library/LibraryIndex')
         }
       ]
@@ -106,16 +118,25 @@ export const createRouter = routes => new Router({
         {
           path: '/index',
           name: 'AppIndex',
+          meta: {
+            requireAuth: true
+          },
           component: () => import('../components/home/AppIndex')
         },
         {
           path: '/jotter',
           name: 'Jotter',
+          meta: {
+            requireAuth: true
+          },
           component: () => import('../components/jotter/Articles')
         },
         {
           path: '/jotter/article',
           name: 'Article',
+          meta: {
+            requireAuth: true
+          },
           component: () => import('../components/jotter/ArticleDetails')
         },
         {
@@ -129,6 +150,9 @@ export const createRouter = routes => new Router({
         {
           path: '/library',
           name: 'Library',
+          meta: {
+            requireAuth: true
+          },
           component: () => import('../components/library/LibraryIndex')
         }
       ]

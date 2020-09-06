@@ -63,7 +63,7 @@
 </script>
 <style>
    #paper {
-    background:url("../assets/img/bg/eva1.jpg") no-repeat;
+    background:url("../assets/img/bg/login-bg.jpeg") no-repeat;
     background-position: center;
     height: 100%;
     width: 100%;
@@ -79,7 +79,7 @@
     margin: 90px auto;
     width: 350px;
     padding: 35px 35px 15px 35px;
-    background: #fff;
+    background: rgba(255,255,255,.5);
     border: 1px solid #eaeaea;
     box-shadow: 0 0 25px #cac6c6;
   }
