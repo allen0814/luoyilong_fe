@@ -1,6 +1,6 @@
 <template>
   <el-container id="admin-body">
-    <el-header style="height: 300px;">
+    <el-header style="height: 150px; padding:0;">
       <Header></Header>
     </el-header>
     <!--<el-row style="height: 100%;">-->

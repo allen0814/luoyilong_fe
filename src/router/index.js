@@ -11,7 +11,7 @@ export default new Router({
     {
       path: '/',
       name: 'Default',
-      redirect: '/home',
+      redirect: '/admin/dashboard',
       component: Home
     },
     {

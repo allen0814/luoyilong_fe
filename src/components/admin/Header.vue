@@ -3,7 +3,7 @@
     <!-- <a href="/index">
       <img src="../../assets/img/icon/icon2.png" alt="" width="55px" style="float: left;margin-top: -5px;">
     </a>  animation-play-state: paused; :style="{'animation-play-state':animationShow}"-->
-    <el-card>
+    <el-card style="height: 140px;">
       <div @click="playPause()" @mouseenter="enter" @mouseleave="leave" class="touxiang">
             <el-avatar :size="100" style="    z-index: 1;position: absolute;">
               <img :class="{pic:true,isPause:isPaused}"  :src="circleUrl" />
@@ -11,8 +11,8 @@
             <i class="el-icon-video-pause myCamera" v-show="pauseShow"></i>
             <i class="el-icon-video-play myCamera" v-show="playShow"></i>
       </div>
-      <span style="font-size: 32px;font-weight: bold;position:absolute;left: 150px;margin-top:20px;">白  卷</span>
-      <i class="el-icon-switch-button" v-on:click="logout" style="font-size: 40px;float: right"></i>
+      <span class="user">白  卷</span>
+      <i class="el-icon-switch-button" v-on:click="logout" style="font-size: 40px;float: right;margin-top: 25px;"></i>
       <audio :src="musicUrl" muted autoplay="autoplay" loop ref="music" hidden></audio>
     </el-card>
   <!-- </el-card> -->
@@ -123,7 +123,7 @@
         border-radius: 50px;
         color: rgba(255,255,255,.5);
         font-size: 50px;
-        margin-top: -106px;
+        margin-top: -126px;
         z-index: 2;
         position: absolute;
         top: 147px;
@@ -131,9 +131,16 @@
     .touxiang {
         width: 100px;
         height: 100px;
-        margin: 0 auto;
         border-radius: 50px;
         cursor: pointer;
-        margin-top: 20px;
+        margin-left: -45px;
+        float: left;
+    }
+    .user {
+      font-size: 32px;
+      font-weight: bold;
+      float: left;
+      margin-top: 22px;
+      margin-left: 75px;
     }
 </style>
